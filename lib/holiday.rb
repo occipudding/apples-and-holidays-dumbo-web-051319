@@ -77,13 +77,13 @@ def all_supplies_in_holidays(holiday_hash)
       line += "  #{sym.to_s.capitalize!}: "
       arr.each do |e|
         if e == arr.last
-          line += e
+          line += e + "\n"
         else
           line += e + ", "
         end
       end
-      puts line
     end
+    puts line
   end
 end
 
