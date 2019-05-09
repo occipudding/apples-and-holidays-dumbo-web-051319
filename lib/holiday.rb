@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
         if supplies[i] == supplies.last
           str.concat(supplies[i])
         else
-          str.concat(supplies[i] + ", ")
+          str.concat("#{supplies[i]}, ")
         end
         puts str
         i += 1
