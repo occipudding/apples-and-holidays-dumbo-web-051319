@@ -76,7 +76,11 @@ def all_supplies_in_holidays(holiday_hash)
       i = 0
       print "  " + holiday.to_s.capitalize! + ": "
       while i < supplies.length
-        supplies[i] == supplies.last ? puts supplies[i] : print supplies[i] + ", "
+        if supplies[i] == supplies.last
+          puts supplies[i]
+        else
+          print supplies[i] + ", "
+        end
         i += 1
       end
     end
