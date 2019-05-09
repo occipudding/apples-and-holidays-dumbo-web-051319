@@ -74,12 +74,12 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize! + ":"
     associated_holidays.each do |holiday, supplies|
       i = 0
-      str = "  " + holiday.to_s.capitalize! + ": "
+      str = "  #{holiday.to_s.capitalize!}: "
       while i <= supplies.length
         if supplies[i] == supplies.last
-          str += supplies[i]
+          str.concat(supplies[i])
         else
-          str += supplies[i] + ", "
+          str.concat(supplies[i] + ", ")
         end
         puts str
         i += 1
