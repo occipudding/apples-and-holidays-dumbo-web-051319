@@ -2,7 +2,7 @@ require 'pry'
 
 holiday_hash = {
      :winter => {
-       :christmas => ["Lights", "Wreath"],
+       :christmas => ["Lights", "Wreath", "butt"],
        :new_years => ["Party Hats"]
      },
      :summer => {
