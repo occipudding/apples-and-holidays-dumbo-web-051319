@@ -81,6 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
         else
           str += supplies[i] + ", "
         end
+        puts str
         i += 1
       end
     end
