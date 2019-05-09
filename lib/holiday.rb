@@ -71,12 +71,15 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
+    line = ""
     puts season + ":"
     holiday.each do |sym, arr|
+      line += "  #{sym}: "
       arr.each do |e|
-        binding.pry
+        line += e == arr.last ? sym : sym + ", "
       end
     end
+    puts line
   end
 end
 
