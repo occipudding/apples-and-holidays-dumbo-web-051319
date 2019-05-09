@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
         end
         h = h.join(" ")
       else
-        h = sym.to_s
+        h = sym.to_s.capitalize!
       end
       line = "  #{h}: "
       arr.each do |e|
