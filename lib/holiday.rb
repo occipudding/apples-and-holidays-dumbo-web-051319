@@ -108,7 +108,7 @@ end
 
 
 
-all_supplies_in_holidays(holiday_hash)
+all_supplies_with_bbq(holiday_hash)
 
 
 
