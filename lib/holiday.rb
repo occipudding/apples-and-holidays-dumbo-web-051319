@@ -74,7 +74,8 @@ def all_supplies_in_holidays(holiday_hash)
     s = season.to_s.include?("_") ? season.to_s.split("_").join(" ") : season.to_s
     puts s.capitalize! + ":"
     holiday.each do |sym, arr|
-      line = "  #{sym.to_s.capitalize!}: "
+      h = sym.to_s.include?("_") ? sym.to_s.split("_").join(" ") : sym.to_s
+      line = "  #{h.to_s.capitalize!}: "
       arr.each do |e|
         if e == arr.last
           line += e
