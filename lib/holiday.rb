@@ -77,9 +77,9 @@ def all_supplies_in_holidays(holiday_hash)
       line += "  #{sym.to_s.capitalize!}: "
       arr.each do |e|
         if e == arr.last
-          line += sym
+          line += sym.to_s.capitalize!
         else
-          line += sym + ", "
+          line += sym.to_s.capitalize! + ", "
         end
       end
     end
