@@ -75,10 +75,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts s.capitalize! + ":"
     holiday.each do |sym, arr|
       if sym.to_s.include?("_")
-        h = sym.to_s.split("_").each do |e|
+        h = sym.to_s.split("_")
+        h.each do |e|
           e.capitalize!
         end
-          .join(" ")
+        h = h.join(" ")
       else
         h = sym.to_s
       end
