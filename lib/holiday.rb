@@ -103,7 +103,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season,holiday|
     holiday.each do |k, v|
       if v.include?("BBQ")
-        arr << k.to_s
+        arr << k
       end
     end
   end
