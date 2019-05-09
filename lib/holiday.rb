@@ -82,8 +82,8 @@ def all_supplies_in_holidays(holiday_hash)
           line += e + ", "
         end
       end
+      puts line
     end
-    puts line
   end
 end
 
