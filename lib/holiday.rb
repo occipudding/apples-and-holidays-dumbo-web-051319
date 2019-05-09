@@ -77,7 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
       str = "  #{holiday.to_s.capitalize!}: "
       while i <= supplies.length
         if supplies[i] == supplies.last
-          str.concat(supplies[i])
+          str.concat("#{supplies[i]}")
         else
           str.concat("#{supplies[i]}, ")
         end
