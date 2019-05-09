@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |sym, arr|
       line += "  #{sym.to_s.capitalize!}: "
       arr.each do |e|
-        line += e == arr.last ? sym : sym + ", "
+        e == arr.last ? line += sym : line += sym + ", "
       end
     end
     puts line
